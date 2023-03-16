@@ -28,6 +28,15 @@
 		  <LocCanonicalName>.Edit.GenCStyleStr</LocCanonicalName>
 		</Strings>
 	  </Button>
+		<Button guid="GenerateCStyleString" id="GenUsingAndStrCMD" priority="0x0101" type="Button">
+			<Parent guid="GenerateCStyleString" id="MyMenuGroup" />
+			<Icon guid="ImageCatalogGuid" id="PasteAppend" />
+			<CommandFlag>IconIsMoniker</CommandFlag>
+			<Strings>
+				<ButtonText>Generate Using And C String</ButtonText>
+				<LocCanonicalName>.Edit.GenUsingAndCStyleStr</LocCanonicalName>
+			</Strings>
+		</Button>
 		<Button guid="GenerateCStyleString" id="MyCommand" priority="0x0100" type="Button">
 			<Parent guid="GenerateCStyleString" id="MyCtxMenuGroup" />
 			<Icon guid="ImageCatalogGuid" id="PasteAppend" />
@@ -37,14 +46,24 @@
 				<LocCanonicalName>.Edit.GenCStyleStr</LocCanonicalName>
 			</Strings>
 		</Button>
+		<Button guid="GenerateCStyleString" id="GenUsingAndStrCMD" priority="0x0101" type="Button">
+			<Parent guid="GenerateCStyleString" id="MyCtxMenuGroup" />
+			<Icon guid="ImageCatalogGuid" id="PasteAppend" />
+			<CommandFlag>IconIsMoniker</CommandFlag>
+			<Strings>
+				<ButtonText>Generate Using And C String</ButtonText>
+				<LocCanonicalName>.Edit.GenUsingAndCStyleStr</LocCanonicalName>
+			</Strings>
+		</Button>
 	</Buttons>
   </Commands>
 
   <Symbols>
 	<GuidSymbol name="GenerateCStyleString" value="{8957af8e-55a8-47e6-abb9-3d74d74048f8}">
 	  <IDSymbol name="MyMenuGroup" value="0x0001" />
-		<IDSymbol name="MyCtxMenuGroup" value="0x0002" />
+	  <IDSymbol name="MyCtxMenuGroup" value="0x0002" />
 	  <IDSymbol name="MyCommand" value="0x0100" />
+		<IDSymbol name="GenUsingAndStrCMD" value="0x0101" />
 	</GuidSymbol>
   </Symbols>
 </CommandTable>

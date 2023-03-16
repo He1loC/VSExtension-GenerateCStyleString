@@ -23,5 +23,6 @@ namespace GenerateCStyleString
         public const int MyMenuGroup = 0x0001;
         public const int MyCtxMenuGroup = 0x0002;
         public const int MyCommand = 0x0100;
+        public const int GenUsingAndStrCMD = 0x0101;
     }
 }
